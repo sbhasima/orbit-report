@@ -1,3 +1,5 @@
+import { truncate } from 'fs';
+
 export class Satellite {
     name: string;
     orbitType: string;
@@ -11,6 +13,16 @@ export class Satellite {
         this.launchDate = launchDate;
         this.orbitType = orbitType;
         this.operational = operational;
+    }
+
+    shouldShowWarning (){
+        debugger
+        if (this.type === "Space Debris"){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
 }
