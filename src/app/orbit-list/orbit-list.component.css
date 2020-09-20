@@ -27,10 +27,6 @@ th, td {
     padding: 6px;
 }
 
-.odd{
-    color:blue;
-}
-
-tr:nth-child(even) { 
+.stripped:nth-child(odd) { 
     background-color: Lightgreen; 
 } 
