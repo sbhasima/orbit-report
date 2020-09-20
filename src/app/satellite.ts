@@ -1,4 +1,3 @@
-import { truncate } from 'fs';
 
 export class Satellite {
     name: string;
@@ -16,8 +15,9 @@ export class Satellite {
     }
 
     shouldShowWarning (){
-        debugger
+        // return this.type.toLowerCase()==="space debris"?(true):(false)
         if (this.type === "Space Debris"){
+            
             return true;
         }
         else{
